@@ -4,8 +4,7 @@ description:
 
 deployment:
   template: l2.hot
-  accommodation: [pair, single_room, compute_nodes: 100]
-
+  accommodation: [pair, single_room, zones: [az-switch9]]
 execution:
   progression: quadratic
   tests:
@@ -35,4 +34,3 @@ execution:
     title: Torrent like competition
     class: flent
     method: rrul_torrent
-
