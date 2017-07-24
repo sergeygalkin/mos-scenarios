@@ -11,6 +11,7 @@
         image:
             name: "TestVM"
         detailed: True
+        auto_assign_nic: true
       runner:
         type: "constant"
         times: {{ compute * 20 }}

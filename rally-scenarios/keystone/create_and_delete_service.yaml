@@ -1,5 +1,5 @@
 ---
-  KeystonePlugin.create_and_delete_service:
+  KeystoneBasic.create_and_delete_service:
     -
       runner:
         type: "constant"

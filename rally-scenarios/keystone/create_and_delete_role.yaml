@@ -1,5 +1,5 @@
 ---
-  KeystonePlugin.create_and_delete_role:
+  KeystoneBasic.create_and_delete_role:
     -
       runner:
         type: "constant"

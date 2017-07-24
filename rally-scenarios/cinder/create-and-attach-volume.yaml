@@ -7,6 +7,9 @@
             name: "TestVM"
           flavor:
             name: "m1.nano"
+          create_vm_params:
+            nics:
+            - net-id: {{ net_id }}
       runner:
         type: "constant"
         times: {{ compute * 9 }}

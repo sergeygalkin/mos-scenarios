@@ -12,6 +12,7 @@
             name: "TestVM"
         to_image:
             name: "TestVM"
+        auto_assign_nic: true
       runner:
         type: constant
         times: {{ compute * 2 }}

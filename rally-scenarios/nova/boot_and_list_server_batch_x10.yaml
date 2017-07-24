@@ -3,9 +3,10 @@
     -
       args:
         flavor:
-            name: "m1.nano"
+            name: "m1.tiny"
         image:
             name: "TestVM"
+        auto_assign_nic: true
         detailed: True
         min_count: 10
       runner:

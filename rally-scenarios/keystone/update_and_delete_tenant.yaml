@@ -1,5 +1,5 @@
 ---
-  KeystonePlugin.update_and_delete_tenant:
+  KeystoneBasic.create_update_and_delete_tenant:
     -
       runner:
         type: "constant"

@@ -10,6 +10,9 @@
         flavor:
             name: {{ flavor }}
         number_instances: 1
+        boot_server_kwargs:
+          nics:
+          - net-id: {{ net_id }}
       runner:
         type: "constant"
         times: {{ compute }}

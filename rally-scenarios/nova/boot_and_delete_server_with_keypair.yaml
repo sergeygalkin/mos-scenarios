@@ -3,9 +3,11 @@
     -
       args:
         flavor:
-            name: "m1.nano"
+            name: "m1.tiny"
         image:
             name: "TestVM"
+        boot_server_kwargs:
+            auto_assign_nic: true
       runner:
         type: "constant"
         times: {{ compute }}

@@ -1,12 +1,11 @@
 ---
-  NovaSecGroup.create_and_delete_secgroups:
+  NeutronSecurityGroup.create_and_list_security_groups:
     -
       args:
-        security_group_count: 10
-        rules_per_security_group: 25
+        security_group_create_args: {}
       runner:
         type: "constant"
-        times: {{ 10 * compute }}
+        times: 4
         concurrency: {{ concurrency }}
       context:
         users:

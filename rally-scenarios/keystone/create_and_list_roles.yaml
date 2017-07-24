@@ -1,5 +1,5 @@
 ---
-  KeystonePlugin.create_and_list_user_roles:
+  KeystoneBasic.create_add_and_list_user_roles:
     -
       runner:
         type: "constant"

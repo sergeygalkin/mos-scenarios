@@ -1,12 +1,11 @@
 ---
-  NeutronSecGroupPlugin.create_and_list_secgroups:
+  NeutronSecurityGroup.create_and_delete_security_groups:
     -
       args:
-        security_group_count: 10
-        rules_per_security_group: 10
+        security_group_create_args: {}
       runner:
         type: "constant"
-        times: 1
+        times: {{ vlan_amount if (not gre_enabled and compute * 10 > vlan_amount) else compute * 10 }}
         concurrency: {{ concurrency }}
       context:
         users:
