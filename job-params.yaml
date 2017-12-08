@@ -1,5 +1,5 @@
 ---
-  concurrency: 10
+  concurrency: 2
   compute: 2
   gre_enabled: true
   vlan_amount: 10
